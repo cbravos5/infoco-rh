@@ -17,18 +17,17 @@
 </head>
 
 <body class="bg-purple-main w-full h-full overflow-x-hidden">
-  <header class="pt-12 flex justify-center">
+  <header class="absolute left-1/2 -translate-x-1/2 top-12 flex justify-center w-full">
     <nav class="bg-orange-secondary rounded-lg w-full mx-4 md:w-2/3 md:min-w-[780px] md:max-w-7xl p-1">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/index.html" class="flex items-center">
           <img src="../assets/img/logo.png" class="h-14" alt="Logo Infoco" />
         </a>
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 
                  h-10 justify-center text-sm text-white
                  rounded-lg md:hidden hover:bg-purple-main
-                 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          aria-controls="navbar-default" aria-expanded="false">
+                 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default"
+          aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
@@ -56,12 +55,11 @@
               <a href="/" class="text-white text-lg font-extralight">Contato</a>
             </li>
             <li>
-              <button type="button"
-                class="text-white bg-purple-main hover:bg-purple-main/90
+              <button type="button" class="text-white bg-purple-main hover:bg-purple-main/90
                          focus:ring-4 focus:outline-none focus:ring-purple-main/50
                          font-medium rounded-lg text-lg px-5 py-2.5 text-center
                          inline-flex items-center">
-              
+
                 LOGIN
                 <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_225_596)">
@@ -80,7 +78,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-              
+
               </button>
             </li>
           </ul>
@@ -89,6 +87,32 @@
     </nav>
 
   </header>
+
+  <section class="bg-no-repeat bg-cover min-h-[90%] pt-[140px] flex justify-center"
+    style="background-image: url(../assets/img/home-sec-1.jpg);">
+    <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl px-2 pt-16 md:px-4 md:pt-40">
+      <div class="flex flex-col gap-8 items-center md:items-start">
+        <h1 class="text-white text-2xl text-center md:text-4xl md:text-left">
+          As melhores soluções em <strong>tecnologia, <br />
+            capacitação e treinamentos</strong> para <br />
+          a Gestão de Recursos Humanos <br />
+          na Administração Pública.</h1>
+
+        <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
+                   focus:outline-none focus:ring-4 focus:bg-orange-main/90
+                   font-medium rounded-full text-lg px-5 py-2.5
+                   text-center">
+          Quero saber mais
+        </button>
+
+        <img draggable="false" class="md:hidden relative bottom-0 w-3/5 h-auto max-w-xl min-w-[280px]"
+          src="../assets/img/person.png" />
+      </div>
+      <img draggable="false" 
+      class="hidden md:block absolute bottom-0 left-[60%] w-2/5 h-auto max-w-xl min-w-md -z-[1]"
+        src="../assets/img/person.png" />
+    </div>
+  </section>
 </body>
 
 <script>
