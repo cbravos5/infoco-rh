@@ -590,12 +590,20 @@ video {
   top: 10rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .-z-\[1\] {
   z-index: -1;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .mx-4 {
@@ -743,6 +751,10 @@ video {
   width: fit-content;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-\[280px\] {
   min-width: 280px;
 }
@@ -785,6 +797,22 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .flex-1 {
@@ -1012,6 +1040,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1022,6 +1055,14 @@ video {
 
 .pt-\[140px\] {
   padding-top: 140px;
+}
+
+.pl-\[10vw\] {
+  padding-left: 10vw;
+}
+
+.pl-\[15vw\] {
+  padding-left: 15vw;
 }
 
 .text-center {
@@ -1051,6 +1092,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1086,6 +1132,11 @@ video {
 .text-purple-main {
   --tw-text-opacity: 1;
   color: rgb(52 53 121 / var(--tw-text-opacity));
+}
+
+.text-orange-main {
+  --tw-text-opacity: 1;
+  color: rgb(255 106 57 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1268,6 +1319,10 @@ html {
     flex-direction: row;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -1289,6 +1344,14 @@ html {
     padding-right: 1rem;
   }
 
+  .md\:pl-\[15vw\] {
+    padding-left: 15vw;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1304,12 +1367,24 @@ html {
     margin-top: 0px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:w-2\/5 {
     width: 40%;
   }
 
   .lg\:w-3\/5 {
     width: 60%;
+  }
+
+  .lg\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .lg\:flex-row {
@@ -1342,6 +1417,18 @@ html {
     display: none;
   }
 
+  .xl\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .xl\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .xl\:items-start {
     align-items: flex-start;
   }
@@ -1356,6 +1443,12 @@ html {
 
   .xl\:text-\[40px\] {
     font-size: 40px;
+  }
+}
+
+@media (min-width: 1780px) {
+  .\32xl\:max-w-4xl {
+    max-width: 56rem;
   }
 }
 
