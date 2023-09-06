@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" /> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <script src="./script.js" defer></script>
@@ -26,8 +27,7 @@
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 
                  h-10 justify-center text-sm text-white
                  rounded-lg md:hidden hover:bg-purple-main
-                 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                 aria-controls="navbar-default"
+                 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -95,9 +95,7 @@
       <button class="home-slide-selector w-10 h-3 rounded-full bg-transparent border-2  border-white"></button>
     </div>
 
-    <section 
-      id="home-slide-1"
-      class="transition duration-[2000ms] opacity-100
+    <section id="home-slide-1" class="transition duration-[2000ms] opacity-100
              absolute top-0 bg-no-repeat bg-cover w-full
              h-full pt-[140px] flex justify-center
              pointer-events-auto overflow-hidden items-center"
@@ -111,28 +109,24 @@
               capacitação e treinamentos</strong> para
             a Gestão de Recursos Humanos
             na Administração Pública.</h1>
-  
+
           <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
                      focus:outline-none focus:ring-4 focus:bg-orange-main/90
                      font-medium rounded-full text-lg px-5 py-2.5
                      text-center">
             Quero saber mais
           </button>
-  
-          <img
-            draggable="false" 
-            class="xl:hidden relative bottom-0 w-3/5 h-auto  md:max-w-xs min-w-[280px] mt-auto"
+
+          <img draggable="false" class="xl:hidden relative bottom-0 w-3/5 h-auto  md:max-w-xs min-w-[280px] mt-auto"
             src="../assets/img/person.png" />
         </div>
         <img draggable="false"
-        class="hidden xl:block absolute bottom-0 left-[60%] w-2/5 h-auto max-w-xl min-w-md -z-[1]"
+          class="hidden xl:block absolute bottom-0 left-[60%] w-2/5 h-auto max-w-xl min-w-md -z-[1]"
           src="../assets/img/person.png" />
       </div>
     </section>
-  
-    <section 
-      id="home-slide-3"
-      class="transition duration-[2000ms] opacity-0 
+
+    <section id="home-slide-3" class="transition duration-[2000ms] opacity-0 
              absolute top-0 bg-no-repeat bg-cover
              w-full h-full pt-[140px] flex items-center
              justify-center pointer-events-none overflow-hidden"
@@ -146,14 +140,14 @@
             pelo InfocoRH, único, inteligente e de
             fácil acesso pronto para ser aplicado
             no meio corporativo</h1>
-  
+
           <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
                    focus:outline-none focus:ring-4 focus:bg-orange-main/90
                    font-medium rounded-full text-lg px-5 py-2.5
                    text-center">
             Quero saber mais
           </button>
-          
+
         </div>
         <div class="w-full xl:absolute max-w-2xl left-[55%] bottom-0">
           <div class="relative mx-auto border-black bg-black
@@ -176,7 +170,107 @@
     </section>
   </div>
 
-  <div class="w-full h-full bg-yellow-300"></div>
+  <section class="w-full bg-white min-h-[60%] py-4 px-2 md:p-12 overflow-hidden">
+    <div class="flex items-center flex-col gap-2 w-full h-full mx-auto md:w-2/3 md:min-w-3xl md:max-w-7xl lg:flex-row">
+      <div class="flex flex-col w-full lg:w-3/5 items-center lg:items-start">
+        <h1 class="text-purple-main text-4xl font-bold">EVENTOS</h1>
+        <h3 class="text-dark-main text-lg font-bold">CONGRESSOS E SEMINÁRIOS</h3>
+
+        <p class="font-light mt-4 max-w-xl text-center lg:text-left">Realizamos eventos e seminários sob a ótica dos <strong>valores
+            humanos</strong>, com <strong>foco no
+            desenvolvimento humano e profissional</strong>.
+          Nossos eventos contam com os melhores doutrinadores em Recursos Humanos do Brasil, oferecendo um ambiente
+          propício
+          para networking e troca de experiências. Toda a capacitação técnica é estruturada para proporcionar uma
+          experiência
+          prática e enriquecedora para os participantes.</p>
+
+        <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
+            focus:outline-none focus:ring-4 focus:bg-orange-main/90
+            font-medium rounded-full text-lg px-5 py-2.5
+            text-center mt-4">
+          Veja todos os eventos
+        </button>
+      </div>
+
+      <div class="flex flex-col w-full lg:w-2/5 mt-5 lg:mt-0">
+        <div class="w-full flex gap-10 transition duration-700" id="event-slider">
+          <div class="transition event shrink-0 w-full max-w-md bg-[#E6E6E6] rounded-sm shadow overflow-hidden">
+            <a href="#">
+              <img src="../assets/img/governanca.jpg" alt="" />
+            </a>
+            <div class="p-5 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <svg width="25" height="25" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.39494 15.2645H4.61912C4.25497 15.2645 3.90574 15.1198 3.64824 14.8623C3.39075 14.6048 3.24609 14.2556 3.24609 13.8914V5.65328C3.24609 5.28913 3.39075 4.9399 3.64824 4.6824C3.90574 4.42491 4.25497 4.28025 4.61912 4.28025H12.8573C13.2214 4.28025 13.5707 4.42491 13.8282 4.6824C14.0856 4.9399 14.2303 5.28913 14.2303 5.65328V9.77236M11.4843 2.90723V5.65328M5.99215 2.90723V5.65328M3.24609 8.39933H14.2303M10.7977 13.8914L12.1708 15.2645L14.9168 12.5184"
+                    stroke="#464646" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="font-light">15 A 17 DE AGOSTO</p>
+              </div>
+              <h2 class="font-bold text-base">SEMINÁRIO BRASILEIRO DE GOVERNANÇA
+                EM GESTÃO DE PESSOAS</h2>
+              <p class="text-sm font-light">O maior Seminário Brasileiro sobre RH no Setor Público está chegando! Garanta já
+                sua vaga para este evento
+                importantíssimo com foco total na gestão de RH público!</p>
+              <button type="button" class="w-fit text-white bg-orange-main hover:bg-orange-main/90
+                        focus:outline-none focus:ring-4 focus:bg-orange-main/90
+                         rounded-full text-base px-5 py-2.5
+                        text-center">
+                Saiba mais
+              </button>
+    
+              <div class="w-full bg-dark-main h-[1px]"></div>
+            </div>
+          </div>
+          <div class="transition event shrink-0 w-full max-w-md bg-[#E6E6E6] rounded-sm shadow overflow-hidden">
+            <a href="#">
+              <img src="../assets/img/rh-setor-publico.jpg" alt="" />
+            </a>
+            <div class="p-5 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <svg width="25" height="25" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.39494 15.2645H4.61912C4.25497 15.2645 3.90574 15.1198 3.64824 14.8623C3.39075 14.6048 3.24609 14.2556 3.24609 13.8914V5.65328C3.24609 5.28913 3.39075 4.9399 3.64824 4.6824C3.90574 4.42491 4.25497 4.28025 4.61912 4.28025H12.8573C13.2214 4.28025 13.5707 4.42491 13.8282 4.6824C14.0856 4.9399 14.2303 5.28913 14.2303 5.65328V9.77236M11.4843 2.90723V5.65328M5.99215 2.90723V5.65328M3.24609 8.39933H14.2303M10.7977 13.8914L12.1708 15.2645L14.9168 12.5184"
+                    stroke="#464646" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="font-light">15 A 17 DE AGOSTO</p>
+              </div>
+              <h2 class="font-bold text-base">SEMINÁRIO BRASILEIRO DE RH NO SETOR PÚBLICO</h2>
+              <p class="text-sm font-light">O maior Seminário Brasileiro sobre RH no Setor Público está chegando! Garanta já
+                sua vaga para este evento
+                importantíssimo com foco total na gestão de RH público!</p>
+              <button type="button" class="w-fit text-white bg-orange-main hover:bg-orange-main/90
+                        focus:outline-none focus:ring-4 focus:bg-orange-main/90
+                         rounded-full text-base px-5 py-2.5
+                        text-center">
+                Saiba mais
+              </button>
+    
+              <div class="w-full bg-dark-main h-[1px]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 mt-2">
+          <button id="prev-event">
+            <svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.3767 32.3659L21.0589 26.0481L27.3767 19.7303M44.2242 26.0481C44.2242 23.5591 43.7339 21.0945 42.7814 18.795C41.8289 16.4954 40.4328 14.406 38.6729 12.646C36.9129 10.8861 34.8235 9.48997 32.5239 8.53747C30.2244 7.58497 27.7598 7.09473 25.2708 7.09473C22.7818 7.09473 20.3172 7.58497 18.0176 8.53747C15.7181 9.48997 13.6287 10.8861 11.8687 12.646C10.1087 14.406 8.71262 16.4954 7.76012 18.795C6.80763 21.0945 6.31738 23.5591 6.31738 26.0481C6.31738 31.0749 8.31425 35.8958 11.8687 39.4502C15.4232 43.0047 20.244 45.0015 25.2708 45.0015C30.2975 45.0015 35.1184 43.0047 38.6729 39.4502C42.2273 35.8958 44.2242 31.0749 44.2242 26.0481Z"
+                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button id="next-event">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.6649 19.7303L29.9827 26.0481L23.6649 32.3659M6.81738 26.0481C6.81738 28.5371 7.30763 31.0017 8.26012 33.3013C9.21262 35.6008 10.6087 37.6902 12.3687 39.4502C14.1287 41.2102 16.2181 42.6063 18.5176 43.5588C20.8172 44.5113 23.2818 45.0015 25.7708 45.0015C28.2598 45.0015 30.7244 44.5113 33.0239 43.5588C35.3235 42.6063 37.4129 41.2102 39.1729 39.4502C40.9328 37.6902 42.3289 35.6008 43.2814 33.3013C44.2339 31.0017 44.7242 28.5371 44.7242 26.0481C44.7242 21.0214 42.7273 16.2005 39.1729 12.646C35.6184 9.0916 30.7975 7.09473 25.7708 7.09473C20.744 7.09473 15.9232 9.0916 12.3687 12.646C8.81425 16.2005 6.81738 21.0214 6.81738 26.0481Z"
+                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 
 <script>

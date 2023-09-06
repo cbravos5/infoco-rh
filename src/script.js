@@ -5,7 +5,16 @@ const items = [
 
 const navigators = document.querySelectorAll('.home-slide-selector');
 
+const eventsSlides = document.querySelectorAll('.event');
+const eventSlider = document.getElementById('event-slider');
+
+const nextEventButton = document.getElementById('next-event');
+const prevEventButton = document.getElementById('prev-event');
+
 let currentHomeSlide = 0;
+let currentEventSlide = 0;
+
+//#region home slide
 
 const toggleSlideOff = (index) => {
   items[index].classList.remove('opacity-100','pointer-events-auto');
@@ -47,3 +56,42 @@ const onChangeSlide = (index) => {
 }
 
 navigators.forEach((node,i) => node.addEventListener('click', () => onChangeSlide(i)))
+
+//#endregion
+
+
+//#region event slide
+
+const onNextEvent = () => {
+  if (currentEventSlide === eventsSlides.length - 1) return;
+
+  eventsSlides[currentEventSlide].classList.add('opacity-0');
+  eventsSlides[currentEventSlide].classList.remove('opacity-100');
+
+  currentEventSlide += 1;
+
+  eventsSlides[currentEventSlide].classList.add('opacity-100');
+  eventsSlides[currentEventSlide].classList.remove('opacity-0');
+
+  eventSlider.style.transform = `translate(calc(-${currentEventSlide*eventsSlides[0].clientWidth}px - ${currentEventSlide*40}px))`;
+}
+
+const onPrevEvent = () => {
+  if (currentEventSlide === 0) return;
+
+  currentEventSlide -= 1;
+
+  eventSlider.style.transform = `translate(calc(-${currentEventSlide*eventsSlides[0].clientWidth}px - ${currentEventSlide*40}px))`;
+
+  setTimeout(() => {
+    eventsSlides[currentEventSlide].classList.add('opacity-100');
+    eventsSlides[currentEventSlide].classList.remove('opacity-0');
+  }, 300);
+}
+
+nextEventButton.addEventListener('click',onNextEvent);
+prevEventButton.addEventListener('click',onPrevEvent);
+
+//#endregion
+
+
