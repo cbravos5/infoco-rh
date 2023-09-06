@@ -10,9 +10,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
-  <link href="/dist/output.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
   <title>Infoco</title>
 </head>
 
@@ -88,72 +88,93 @@
     </nav>
 
   </header>
+  <div class="relative h-[120%] md:h-[90%] w-full lg:pt-20 xl:pt-40">
+    <div class="flex gap-2 absolute top-40 left-1/2 -translate-x-1/2 md:translate-x-0 md:top-60 z-10 md:left-[20%]">
+      <button class="home-slide-selector w-10 h-3 rounded-full bg-white border-2 border-white"></button>
+      <!-- <button class="w-6 h-2"></button> -->
+      <button class="home-slide-selector w-10 h-3 rounded-full bg-transparent border-2  border-white"></button>
+    </div>
 
-  <!-- <section class="bg-no-repeat bg-cover min-h-[90%] pt-[140px] flex justify-center"
-    style="background-image: url(../assets/img/home-sec-1-slide-1.jpg);">
-    <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl px-2 pt-16 md:px-4 md:pt-40">
-      <div class="flex flex-col gap-8 items-center md:items-start">
-        <h1 class="text-white text-2xl text-center md:text-[40px] md:leading-10 md:text-left max-w-xl">
-          As melhores soluções em <strong>tecnologia,
-            capacitação e treinamentos</strong> para
-          a Gestão de Recursos Humanos
-          na Administração Pública.</h1>
-
-        <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
+    <section 
+      id="home-slide-1"
+      class="transition duration-[2000ms] opacity-100
+             absolute top-0 bg-no-repeat bg-cover w-full
+             h-full pt-[140px] flex justify-center
+             pointer-events-auto overflow-hidden items-center"
+      style="background-image: url(../assets/img/home-sec-1-slide-1.jpg);">
+      <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl px-2 pt-16 md:px-4 h-full flex flex-col justify-center">
+        <div class="flex flex-col gap-8 items-center xl:items-start">
+          <h1 class="text-white text-2xl text-center md:text-3xl xl:text-[40px] md:leading-10 xl:text-left max-w-xl">
+            As melhores soluções em <strong>tecnologia,
+              capacitação e treinamentos</strong> para
+            a Gestão de Recursos Humanos
+            na Administração Pública.</h1>
+  
+          <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
+                     focus:outline-none focus:ring-4 focus:bg-orange-main/90
+                     font-medium rounded-full text-lg px-5 py-2.5
+                     text-center">
+            Quero saber mais
+          </button>
+  
+          <img
+            draggable="false" 
+            class="xl:hidden relative bottom-0 w-3/5 h-auto  md:max-w-xs min-w-[280px]"
+            src="../assets/img/person.png" />
+        </div>
+        <img draggable="false"
+        class="hidden xl:block absolute bottom-0 left-[60%] w-2/5 h-auto max-w-xl min-w-md -z-[1]"
+          src="../assets/img/person.png" />
+      </div>
+    </section>
+  
+    <section 
+      id="home-slide-3"
+      class="transition duration-[2000ms] opacity-0 
+             absolute top-0 bg-no-repeat bg-cover
+             w-full h-full pt-[140px] flex items-center
+             justify-center pointer-events-none overflow-hidden"
+      style="background-image: url(../assets/img/home-sec-1-slide-3.jpg);">
+      <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl
+                  px-2 pt-16 md:px-4 h-fit flex flex-col
+                  justify-center items-center gap-12 pb-10 xl:items-start">
+        <div class="flex flex-col gap-8 items-center xl:items-start">
+          <h1 class="text-white text-2xl text-center md:text-3xl xl:text-[40px] md:leading-10 xl:text-left max-w-xl">
+            Conheça o sistema desenvolvido
+            pelo InfocoRH, único, inteligente e de
+            fácil acesso pronto para ser aplicado
+            no meio corporativo</h1>
+  
+          <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
                    focus:outline-none focus:ring-4 focus:bg-orange-main/90
                    font-medium rounded-full text-lg px-5 py-2.5
                    text-center">
-          Quero saber mais
-        </button>
-
-        <img draggable="false" class="md:hidden relative bottom-0 w-3/5 h-auto max-w-xl min-w-[280px]"
-          src="../assets/img/person.png" />
-      </div>
-      <img draggable="false" 
-      class="hidden md:block absolute bottom-0 left-[60%] w-2/5 h-auto max-w-xl min-w-md -z-[1]"
-        src="../assets/img/person.png" />
-    </div>
-  </section> -->
-
-  <section class="bg-no-repeat bg-cover min-h-[90%] pt-[140px] flex justify-center"
-    style="background-image: url(../assets/img/home-sec-1-slide-3.jpg);">
-    <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl
-                px-2 pt-16 md:px-4 md:pt-40 h-fit flex flex-col
-                justify-center items-center gap-12 pb-10 xl:items-start">
-      <div class="flex flex-col gap-8 items-center xl:items-start">
-        <h1 class="text-white text-2xl text-center md:text-[40px] md:leading-10 xl:text-left max-w-xl">
-          Conheça o sistema desenvolvido
-          pelo InfocoRH, único, inteligente e de
-          fácil acesso pronto para ser aplicado
-          no meio corporativo</h1>
-
-        <button type="button" class="max-w-xs text-white bg-orange-main hover:bg-orange-main/90
-                 focus:outline-none focus:ring-4 focus:bg-orange-main/90
-                 font-medium rounded-full text-lg px-5 py-2.5
-                 text-center">
-          Quero saber mais
-        </button>
-        
-      </div>
-      <div class="w-full xl:absolute max-w-2xl left-[55%] bottom-0">
-        <div class="relative mx-auto border-black bg-black
-                  border-[8px] rounded-t-xl h-[172px] max-w-[301px]
-                  md:h-[294px] md:max-w-[512px]">
-          <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white ">
-            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png"
-              class="h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+            Quero saber mais
+          </button>
+          
+        </div>
+        <div class="w-full xl:absolute max-w-2xl left-[55%] bottom-0">
+          <div class="relative mx-auto border-black bg-black
+                    border-[8px] rounded-t-xl h-[172px] max-w-[301px]
+                    md:h-[294px] md:max-w-[512px]">
+            <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white ">
+              <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png"
+                class="h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+            </div>
+          </div>
+          <div class="relative mx-auto bg-[#A3ACB1] rounded-b-xl
+                  rounded-t-sm h-[17px] max-w-[351px] md:h-[21px]
+                  md:max-w-[597px]">
+            <div class="absolute left-1/2 top-0 -translate-x-1/2
+                      rounded-b-xl w-[56px] h-[5px] md:w-[96px]
+                      md:h-[8px] bg-black "></div>
           </div>
         </div>
-        <div class="relative mx-auto bg-[#A3ACB1] rounded-b-xl
-                rounded-t-sm h-[17px] max-w-[351px] md:h-[21px]
-                md:max-w-[597px]">
-          <div class="absolute left-1/2 top-0 -translate-x-1/2
-                    rounded-b-xl w-[56px] h-[5px] md:w-[96px]
-                    md:h-[8px] bg-black "></div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <div class="w-full h-full bg-yellow-300"></div>
 </body>
 
 <script>
