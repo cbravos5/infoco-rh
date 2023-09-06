@@ -88,7 +88,7 @@
     </nav>
 
   </header>
-  <div class="relative h-[120%] md:h-[90%] w-full lg:pt-20 xl:pt-40">
+  <div class="relative h-[120%] max-h-[800px] sm:max-h-full md:h-[90%] w-full lg:pt-20 xl:pt-40">
     <div class="flex gap-2 absolute top-40 left-1/2 -translate-x-1/2 md:translate-x-0 md:top-60 z-10 md:left-[20%]">
       <button class="home-slide-selector w-10 h-3 rounded-full bg-white border-2 border-white"></button>
       <!-- <button class="w-6 h-2"></button> -->
@@ -102,7 +102,9 @@
              h-full pt-[140px] flex justify-center
              pointer-events-auto overflow-hidden items-center"
       style="background-image: url(../assets/img/home-sec-1-slide-1.jpg);">
-      <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl px-2 pt-16 md:px-4 h-full flex flex-col justify-center">
+      <div class="relative md:w-2/3 md:min-w-3xl md:max-w-7xl
+                  px-2 pt-16 md:px-4 h-full flex flex-col
+                  justify-center">
         <div class="flex flex-col gap-8 items-center xl:items-start">
           <h1 class="text-white text-2xl text-center md:text-3xl xl:text-[40px] md:leading-10 xl:text-left max-w-xl">
             As melhores soluções em <strong>tecnologia,
@@ -119,7 +121,7 @@
   
           <img
             draggable="false" 
-            class="xl:hidden relative bottom-0 w-3/5 h-auto  md:max-w-xs min-w-[280px]"
+            class="xl:hidden relative bottom-0 w-3/5 h-auto  md:max-w-xs min-w-[280px] mt-auto"
             src="../assets/img/person.png" />
         </div>
         <img draggable="false"

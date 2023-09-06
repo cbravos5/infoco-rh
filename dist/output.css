@@ -620,6 +620,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -695,6 +699,10 @@ video {
 
 .h-\[120\%\] {
   height: 120%;
+}
+
+.max-h-\[800px\] {
+  max-height: 800px;
 }
 
 .min-h-full {
@@ -812,6 +820,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-hidden {
@@ -1066,6 +1078,12 @@ html {
 
 .focus\:ring-purple-main\/50:focus {
   --tw-ring-color: rgb(52 53 121 / 0.5);
+}
+
+@media (min-width: 562px) {
+  .sm\:max-h-full {
+    max-height: 100%;
+  }
 }
 
 @media (min-width: 768px) {
