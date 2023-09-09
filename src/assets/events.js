@@ -54,7 +54,7 @@ const toggleSlideOff = (index) => {
 
   galeryDots[index].classList.add('bg-white');
   galeryDots[index].classList.remove('bg-orange-main');
-}
+};
 
 const toggleSlideOn = (index) => {
   galerySlides[index].classList.add('h-96');
@@ -62,7 +62,7 @@ const toggleSlideOn = (index) => {
 
   galeryDots[index].classList.add('bg-orange-main');
   galeryDots[index].classList.remove('bg-white');
-}
+};
 
 const getTranslateValue = (item) => {
   const sliderRect = galerySlider.getBoundingClientRect();
@@ -90,7 +90,7 @@ const onNextGalery = () => {
 
   const translateValue = getTranslateValue(galerySlides[currentGalerySlide]);
 
-  galerySlider.style.transform = `translate(-${translateValue+20}px)`;
+  galerySlider.style.transform = `translate(-${translateValue + 20}px)`;
 };
 
 const onPrevGalery = () => {
@@ -104,25 +104,96 @@ const onPrevGalery = () => {
 
   const translateValue = getTranslateValue(galerySlides[currentGalerySlide]);
 
-  galerySlider.style.transform = `translate(-${translateValue+(currentGalerySlide ? 20 : 0)}px)`;
+  galerySlider.style.transform = `translate(-${
+    translateValue + (currentGalerySlide ? 20 : 0)
+  }px)`;
 };
 
 const onChangeGalerySlide = (index) => {
-
-  toggleSlideOff(currentGalerySlide)
+  toggleSlideOff(currentGalerySlide);
 
   currentGalerySlide = index;
 
-  toggleSlideOn(index)
-  
+  toggleSlideOn(index);
+
   const translateValue = getTranslateValue(galerySlides[currentGalerySlide]);
 
   galerySlider.style.transform = `translate(-${translateValue}px)`;
-}
-
+};
 
 nextGaleryImgButton.addEventListener('click', onNextGalery);
 prevGaleryImgButton.addEventListener('click', onPrevGalery);
 
+galeryDots.forEach((node, i) =>
+  node.addEventListener('click', () => onChangeGalerySlide(i))
+);
 
-galeryDots.forEach((node,i) => node.addEventListener('click', () => onChangeGalerySlide(i)))
+
+const testimonySlider = document.getElementById('testimony-slider');
+const testimonySlides = document.querySelectorAll('.testimony-slide');
+
+const nextTestimonyButtons = document.querySelectorAll('.next-testimony');
+const prevTestimonyButtons = document.querySelectorAll('.prev-testimony');
+
+const testimonyDots = document.querySelectorAll('.testimony-dot');
+
+let currentTestimonySlide = 0;
+
+const onNextTestimony = () => {
+  if (currentTestimonySlide === testimonySlides.length - 1) return;
+
+  testimonyDots[currentTestimonySlide].classList.add('bg-purple-main');
+  testimonyDots[currentTestimonySlide].classList.remove('bg-orange-main');
+
+  currentTestimonySlide += 1;
+
+  testimonyDots[currentTestimonySlide].classList.add('bg-orange-main');
+  testimonyDots[currentTestimonySlide].classList.remove('bg-purple-main');
+
+  testimonySlider.style.transform = `translate(calc(-${
+    currentTestimonySlide * 100
+  }% - ${currentTestimonySlide * 20}px))`;
+};
+
+const onPrevTestimony = () => {
+  if (currentTestimonySlide === 0) return;
+
+  testimonyDots[currentTestimonySlide].classList.add('bg-purple-main');
+  testimonyDots[currentTestimonySlide].classList.remove('bg-orange-main');
+
+  currentTestimonySlide -= 1;
+
+  testimonyDots[currentTestimonySlide].classList.add('bg-orange-main');
+  testimonyDots[currentTestimonySlide].classList.remove('bg-purple-main');
+
+  testimonySlider.style.transform = `translate(calc(-${
+    currentTestimonySlide * 100
+  }% - ${currentTestimonySlide * 20}px))`;
+};
+
+
+const onChangeTestimonySlide = (index) => {
+  testimonyDots[currentTestimonySlide].classList.add('bg-purple-main');
+  testimonyDots[currentTestimonySlide].classList.remove('bg-orange-main');
+
+  currentTestimonySlide = index;
+
+  testimonyDots[index].classList.add('bg-orange-main');
+  testimonyDots[index].classList.remove('bg-purple-main');
+
+  testimonySlider.style.transform = `translate(calc(-${
+    currentTestimonySlide * 100
+  }% - ${currentTestimonySlide * 20}px))`;
+};
+
+nextTestimonyButtons.forEach((node) =>
+  node.addEventListener('click', onNextTestimony)
+);
+prevTestimonyButtons.forEach((node) =>
+  node.addEventListener('click', onPrevTestimony)
+);
+testimonyDots.forEach((node, i) =>
+  node.addEventListener('click', () => onChangeTestimonySlide(i))
+);
+
+

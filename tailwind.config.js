@@ -34,7 +34,7 @@ module.exports = {
       },
       colors: {
         orange: { main: '#FF6A39', secondary: '#D7582E' },
-        purple: { main: '#343579'  },
+        purple: { main: '#343579', secondary: '#51528F'  },
         dark: { main: '#424242' }
       }
     },

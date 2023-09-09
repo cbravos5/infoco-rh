@@ -39,13 +39,13 @@
           <ul class="font-medium flex flex-col md:p-0
                      mt-4 rounded-lg items-center gap-2 md:flex-row 
                      md:gap-4 md:mt-0 [&_li]:h-fit">
-            <li class="relative">
+            <li>
               <a href="./index.html" class="text-white text-lg font-extralight">Home</a>
             </li>
             <li>
               <a href="/" class="text-white text-lg font-extralight">Infoco RH</a>
             </li>
-            <li>
+            <li class="relative">
               <a href="./eventos.html" class="text-white text-lg font-bold" aria-current="page">Eventos</a>
               <div class="absolute bottom-0 md:-bottom-2 w-full h-[1px] bg-white"></div>
             </li>
@@ -189,27 +189,30 @@
   </section>
 
 
-  <section class="overflow-hidden w-full py-8 px-2 md:p-12 bg-cover bg-no-repeat"
+  <section class="overflow-hidden w-full py-8 px-4 md:py-12 bg-cover bg-no-repeat"
     style="background-image: url(../assets/img/eventos/sec-2.jpg);">
-    <div class="relative h-full justify-center mx-auto md:w-2/3 md:min-w-3xl md:max-w-7xl flex flex-col items-center gap-10">
+    <div
+      class="relative h-full justify-center mx-auto md:w-2/3 md:min-w-3xl md:max-w-7xl flex flex-col items-center gap-10">
       <h1 class="text-white text-2xl font-bold md:text-3xl xl:text-[40px] md:leading-10">GALERIA DE IMAGENS</h1>
-    
+
       <div class="w-full overflow-hidden flex justify-center items-center flex-col gap-10">
-        <div id="galery-slider" class="transition duration-1000 flex items-center h-96">
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-96 mx-5 md:mx-10 object-cover object-center"
+        <div id="galery-slider" class="transition duration-1000 flex items-center h-96 
+                 [&_img:not(:first-child)]:md:ml-10 [&_img:not(:last-child)]:md:mr-10
+                 [&_img:not(:first-child)]:ml-5 [&_img:not(:last-child)]:mr-5">
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-96 object-cover object-center"
             src="https://placehold.co/600x400" />
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 mx-5 md:mx-10 object-cover object-center"
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 object-cover object-center"
             src="https://placehold.co/600x400" />
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 mx-5 md:mx-10 object-cover object-center"
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 object-cover object-center"
             src="https://placehold.co/600x400" />
 
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 mx-5 md:mx-10 object-cover object-center"
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 object-cover object-center"
             src="https://placehold.co/600x400" />
-         
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 mx-5 md:mx-10 object-cover object-center"
+
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 object-cover object-center"
             src="https://placehold.co/600x400" />
-         
-          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 mx-5 md:mx-10 object-cover object-center"
+
+          <img class="transition-all duration-700 galery-item shrink-0 max-w-xs w-full h-80 object-cover object-center"
             src="https://placehold.co/600x400" />
         </div>
         <div class="w-fit flex items-center gap-2">
@@ -248,6 +251,136 @@
     </div>
   </section>
 
+  <section class="overflow-hidden w-full py-8 px-4 md:py-12 bg-cover bg-no-repeat"
+    style="background-image: url(../assets/img/eventos/sec-3.jpg);">
+    <div class="relative h-full justify-center mx-auto
+             md:w-2/3 md:min-w-3xl md:max-w-7xl flex 
+             items-center gap-5 lg:gap-10 flex-col md:flex-row">
+
+      <button class="prev-testimony md:w-16 md:h-16 hidden md:block">
+        <svg width="100%" height="100%" viewBox="0 0 82 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M40.7856 82.1017C63.3123 82.1017 81.5703 63.8437 81.5703 41.317C81.5703 18.7902 63.3123 0.532227 40.7856 0.532227C18.2588 0.532227 0.000854492 18.7902 0.000854492 41.317C0.000854492 63.8437 18.2588 82.1017 40.7856 82.1017Z"
+            fill="#FF6A39" />
+          <path d="M22.659 41.3166H58.9121" stroke="white" stroke-width="2.36571" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M36.2539 27.7217L22.659 41.3166L36.2539 54.9115" stroke="white" stroke-width="2.36571"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="w-full overflow-hidden flex items-center gap-4 flex-col">
+        <h1 class="text-purple-main w-full text-center text-2xl md:text-3xl xl:text-[40px] md:leading-10 md:text-left">
+          <strong>CONFIRA
+            ALGUNS
+            DEPOIMENTOS</strong>
+        </h1>
+
+        <div class="flex gap-1 self-end">
+          <button class="testimony-dot h-2 w-2 rounded-full bg-orange-main"></button>
+          <button class="testimony-dot h-2 w-2 rounded-full bg-purple-main"></button>
+          <button class="testimony-dot h-2 w-2 rounded-full bg-purple-main"></button>
+        </div>
+
+        <div id="testimony-slider" class="transition duration-1000 flex w-full gap-5">
+          <div class="testimony-slide flex flex-col shrink-0 sm:flex-row w-full h-fit sm:h-96">
+            <img class="h-56 sm:h-full w-full sm:w-1/3 min-w-[240px] object-cover" src="https://placehold.co/600x400" />
+            <div
+              class="flex flex-col h-64 sm:h-full w-full sm:w-2/3 gap-3 justify-center bg-purple-secondary py-3 px-8">
+              <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.6081 16.1558C27.5837 16.1558 29.589 18.2631 29.589 21.3855C29.589 24.1952 27.2843 26.536 24.1627 26.536C20.7436 26.536 18.2171 23.7263 18.2171 19.4345C18.2171 9.67951 25.2032 5.77753 29.589 5.30859V9.60039C26.6152 10.1465 23.2719 13.1898 23.1222 16.5475C23.2719 16.4704 23.8651 16.1558 24.6081 16.1558ZM9.44755 16.1558C12.4194 16.1558 14.4265 18.2631 14.4265 21.3855C14.4265 24.1952 12.1218 26.536 9.00026 26.536C5.58113 26.536 3.05469 23.7263 3.05469 19.4345C3.05469 9.67951 10.0408 5.77753 14.4265 5.30859V9.60039C11.4528 10.1465 8.10947 13.1898 7.95974 16.5475C8.10947 16.4704 8.7027 16.1558 9.44755 16.1558Z"
+                  fill="white" />
+              </svg>
+
+              <h1 class="text-2xl text-white font-bold">ROMULO BARBOSA</h1>
+
+              <p class="text-white">
+                Os eventos da Infoco RH são excelentes, melhoraram a minha capacidade em meu trabalho e como gestor da
+                minha empresa.
+              </p>
+            </div>
+          </div>
+          <div class="testimony-slide flex flex-col shrink-0 sm:flex-row w-full h-fit sm:h-96">
+            <img class="h-56 sm:h-full w-full sm:w-1/3 min-w-[240px] object-cover" src="https://placehold.co/600x400" />
+            <div
+              class="flex flex-col h-64 sm:h-full w-full sm:w-2/3 gap-3 justify-center bg-purple-secondary py-3 px-8">
+              <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.6081 16.1558C27.5837 16.1558 29.589 18.2631 29.589 21.3855C29.589 24.1952 27.2843 26.536 24.1627 26.536C20.7436 26.536 18.2171 23.7263 18.2171 19.4345C18.2171 9.67951 25.2032 5.77753 29.589 5.30859V9.60039C26.6152 10.1465 23.2719 13.1898 23.1222 16.5475C23.2719 16.4704 23.8651 16.1558 24.6081 16.1558ZM9.44755 16.1558C12.4194 16.1558 14.4265 18.2631 14.4265 21.3855C14.4265 24.1952 12.1218 26.536 9.00026 26.536C5.58113 26.536 3.05469 23.7263 3.05469 19.4345C3.05469 9.67951 10.0408 5.77753 14.4265 5.30859V9.60039C11.4528 10.1465 8.10947 13.1898 7.95974 16.5475C8.10947 16.4704 8.7027 16.1558 9.44755 16.1558Z"
+                  fill="white" />
+              </svg>
+
+              <h1 class="text-2xl text-white font-bold">ROMULO BARBOSA</h1>
+
+              <p class="text-white">
+                Os eventos da Infoco RH são excelentes, melhoraram a minha capacidade em meu trabalho e como gestor da
+                minha empresa.
+              </p>
+            </div>
+          </div>
+          <div class="testimony-slide flex flex-col shrink-0 sm:flex-row w-full h-fit sm:h-96">
+            <img class="h-56 sm:h-full w-full sm:w-1/3 min-w-[240px] object-cover" src="https://placehold.co/600x400" />
+            <div
+              class="flex flex-col h-64 sm:h-full w-full sm:w-2/3 gap-3 justify-center bg-purple-secondary py-3 px-8">
+              <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.6081 16.1558C27.5837 16.1558 29.589 18.2631 29.589 21.3855C29.589 24.1952 27.2843 26.536 24.1627 26.536C20.7436 26.536 18.2171 23.7263 18.2171 19.4345C18.2171 9.67951 25.2032 5.77753 29.589 5.30859V9.60039C26.6152 10.1465 23.2719 13.1898 23.1222 16.5475C23.2719 16.4704 23.8651 16.1558 24.6081 16.1558ZM9.44755 16.1558C12.4194 16.1558 14.4265 18.2631 14.4265 21.3855C14.4265 24.1952 12.1218 26.536 9.00026 26.536C5.58113 26.536 3.05469 23.7263 3.05469 19.4345C3.05469 9.67951 10.0408 5.77753 14.4265 5.30859V9.60039C11.4528 10.1465 8.10947 13.1898 7.95974 16.5475C8.10947 16.4704 8.7027 16.1558 9.44755 16.1558Z"
+                  fill="white" />
+              </svg>
+
+              <h1 class="text-2xl text-white font-bold">ROMULO BARBOSA</h1>
+
+              <p class="text-white">
+                Os eventos da Infoco RH são excelentes, melhoraram a minha capacidade em meu trabalho e como gestor da
+                minha empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="next-testimony md:w-16 md:h-16 hidden md:block">
+        <svg width="100%" height="100%" viewBox="0 0 82 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M41.2144 82.1017C18.6877 82.1017 0.429688 63.8437 0.429688 41.317C0.429688 18.7902 18.6877 0.532227 41.2144 0.532227C63.7412 0.532227 81.9991 18.7902 81.9991 41.317C81.9991 63.8437 63.7412 82.1017 41.2144 82.1017Z"
+            fill="#FF6A39" />
+          <path d="M59.341 41.3166H23.0879" stroke="white" stroke-width="2.36571" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M45.7461 27.7217L59.341 41.3166L45.7461 54.9115" stroke="white" stroke-width="2.36571"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="flex gap-4 justify-center">
+        <button class="prev-testimony w-12 h-12 md:hidden">
+          <svg width="100%" height="100%" viewBox="0 0 82 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M40.7856 82.1017C63.3123 82.1017 81.5703 63.8437 81.5703 41.317C81.5703 18.7902 63.3123 0.532227 40.7856 0.532227C18.2588 0.532227 0.000854492 18.7902 0.000854492 41.317C0.000854492 63.8437 18.2588 82.1017 40.7856 82.1017Z"
+              fill="#FF6A39" />
+            <path d="M22.659 41.3166H58.9121" stroke="white" stroke-width="2.36571" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M36.2539 27.7217L22.659 41.3166L36.2539 54.9115" stroke="white" stroke-width="2.36571"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="next-testimony w-12 h-12 md:hidden">
+          <svg width="100%" height="100%" viewBox="0 0 82 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M41.2144 82.1017C18.6877 82.1017 0.429688 63.8437 0.429688 41.317C0.429688 18.7902 18.6877 0.532227 41.2144 0.532227C63.7412 0.532227 81.9991 18.7902 81.9991 41.317C81.9991 63.8437 63.7412 82.1017 41.2144 82.1017Z"
+              fill="#FF6A39" />
+            <path d="M59.341 41.3166H23.0879" stroke="white" stroke-width="2.36571" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M45.7461 27.7217L59.341 41.3166L45.7461 54.9115" stroke="white" stroke-width="2.36571"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
   <section class="w-full flex justify-center items-center py-8 px-2 gap-4 flex-col md:flex-row">
     <h1 class="font-bold text-white text-2xl text-center md:text-3xl
                 xl:text-3xl md:leading-10">
@@ -277,9 +410,9 @@
 
         <div class="text-white flex flex-col items-center md:items-start">
           <h2 class="text-2xl font-bold">Páginas</h2>
-          <a href="./index.html" class="font-bold">Início</a>
+          <a href="./index.html">Início</a>
           <a href="./capacitacao.html">Capacitação</a>
-          <a href="./eventos.html">Eventos</a>
+          <a href="./eventos.html" class="font-bold">Eventos</a>
           <a href="./contato.html">Contato</a>
         </div>
 
