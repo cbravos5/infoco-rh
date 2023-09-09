@@ -1,6 +1,7 @@
 const items = [
   document.getElementById('home-slide-1'),
-  document.getElementById('home-slide-3')
+  document.getElementById('home-slide-2'),
+  document.getElementById('home-slide-3'),
 ];
 
 const navigators = document.querySelectorAll('.home-slide-selector');
