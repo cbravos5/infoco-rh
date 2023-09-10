@@ -1141,6 +1141,14 @@ video {
   background-position: right;
 }
 
+.bg-\[60\%\] {
+  background-position: 60%;
+}
+
+.bg-\[50\%\] {
+  background-position: 50%;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1705,6 +1713,11 @@ html {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .md\:pl-\[15vw\] {
