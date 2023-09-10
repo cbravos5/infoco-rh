@@ -1,8 +1,4 @@
-const items = [
-  document.getElementById('home-slide-1'),
-  document.getElementById('home-slide-2'),
-  document.getElementById('home-slide-3'),
-];
+const homeMainSlides = document.querySelectorAll('.home-main-slide');
 
 const navigators = document.querySelectorAll('.home-slide-selector');
 
@@ -18,16 +14,16 @@ let currentEventSlide = 0;
 //#region home slide
 
 const toggleSlideOff = (index) => {
-  items[index].classList.remove('opacity-100','pointer-events-auto');
-  items[index].classList.add('opacity-0','pointer-events-none');
+  homeMainSlides[index].classList.remove('opacity-100','pointer-events-auto');
+  homeMainSlides[index].classList.add('opacity-0','pointer-events-none');
 
   navigators[index].classList.add('bg-transparent');
   navigators[index].classList.remove('bg-white');
 }
 
 const toggleSlideOn = (index) => {
-  items[index].classList.remove('opacity-0','pointer-events-none');
-  items[index].classList.add('opacity-100','pointer-events-auto');
+  homeMainSlides[index].classList.remove('opacity-0','pointer-events-none');
+  homeMainSlides[index].classList.add('opacity-100','pointer-events-auto');
 
   navigators[index].classList.add('bg-white');
   navigators[index].classList.remove('bg-transparent');
@@ -36,7 +32,7 @@ const toggleSlideOn = (index) => {
 const onNextHomeSlide = () => {
   toggleSlideOff(currentHomeSlide);
 
-  if (currentHomeSlide == items.length - 1) currentHomeSlide = 0;
+  if (currentHomeSlide == homeMainSlides.length - 1) currentHomeSlide = 0;
   else currentHomeSlide += 1;
   
   toggleSlideOn(currentHomeSlide);
