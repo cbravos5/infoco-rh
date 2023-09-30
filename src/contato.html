@@ -19,14 +19,14 @@
 
 <body class="bg-purple-main w-full h-full overflow-x-hidden">
   <header class="absolute left-1/2 -translate-x-1/2 top-12 flex justify-center w-full z-10">
-    <nav class="bg-orange-secondary rounded-lg w-full mx-4 md:w-2/3 md:min-w-[800px] md:max-w-7xl p-1">
+    <nav class="bg-orange-secondary rounded-lg w-full mx-4 md:w-2/3 lg:min-w-[800px] md:max-w-7xl p-1">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="./index.html" class="flex items-center">
           <img src="../assets/img/logo.png" class="h-14" alt="Logo Infoco" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 
                  h-10 justify-center text-sm text-white
-                 rounded-lg md:hidden hover:bg-purple-main
+                 rounded-lg lg:hidden hover:bg-purple-main
                  focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -35,10 +35,10 @@
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col md:p-0
-                     mt-4 rounded-lg items-center gap-2 md:flex-row 
-                     md:gap-4 md:mt-0 [&_li]:h-fit">
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col lg:p-0
+                     mt-4 rounded-lg items-center gap-2 lg:flex-row 
+                     lg:gap-4 lg:mt-0 [&_li]:h-fit">
             <li>
               <a href="./index.html" class="text-white text-lg font-extralight">Home</a>
             </li>
@@ -52,7 +52,7 @@
               <a href="./solucoes-tecnologicas.html" class="text-white text-lg font-extralight">Soluções Tecnológicas</a>
             </li>
             <li class="relative">
-              <a href="/" class="text-white text-lg font-bold" aria-current="page">Contato</a>
+              <a href="./contato.html" class="text-white text-lg font-bold" aria-current="page">Contato</a>
               <div class="absolute bottom-0 md:-bottom-2 w-full h-[1px] bg-white"></div>
             </li>
             <li>
@@ -98,7 +98,7 @@
           ENTRE EM <strong>CONTATO</strong>
         </h1>
 
-        <form class="mt-10 w-full flex flex-col gap-5 pb-10">
+        <form class="mt-10 w-full flex flex-col gap-5 pb-10 max-w-md">
            <input
               placeholder="Nome"
               name="name"
@@ -137,6 +137,106 @@
     </div>
   </section>
 
+  <section class="relative w-full flex flex-col md:flex-row md:h-1/2 min-h-[50%] overflow-hidden border-t-4 border-orange-main">
+    <div class="bg-white w-full bg-cover bg-no-repeat px-4 py-12 md:px-10 ">
+      <div class="flex flex-col h-full items-center md:items-start w-full justify-center gap-4 md:max-w-xl md:min-w-md md:ml-auto md:w-2/3">
+        <h1 class="text-2xl text-center md:text-[40px] md:leading-10 md:text-left">
+          SE PREFERIR TAMBÉM <br />
+          <strong>ESTAMOS PRESENTES</strong>
+        </h1>
+       
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center font-light text-lg gap-3 ">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.38477 10.5439V10.5439C4.38477 11.4208 4.82323 12.1515 5.554 12.7362L14.3232 18.7285C16.3694 20.0439 18.854 20.0439 20.9002 18.7285L29.6694 12.8823C30.254 12.1515 30.6925 11.4208 30.6925 10.5439V10.5439C30.6925 9.08232 29.5232 7.91309 28.0617 7.91309H7.01553C5.554 7.91309 4.38477 9.08232 4.38477 10.5439Z" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.38477 10.8359V25.4513C4.38477 27.059 5.70015 28.3744 7.30784 28.3744H27.7694C29.3771 28.3744 30.6925 27.059 30.6925 25.4513V10.8359" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.24414 27.515L14.1508 18.6084" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.9883 18.6699L29.8335 27.5152" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+  
+            <p>E-mail: <a href="#" class="underline">falecom@infocorh.com.br</a></p>
+          </div>
+          <div class="flex items-center font-light text-lg gap-3">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7175 25.1123L26.0032 23.3979C25.1467 22.5414 23.7582 22.5414 22.9032 23.3979L21.5557 24.7454C21.2546 25.0465 20.7986 25.1473 20.4099 24.9763C18.4572 24.1213 16.528 22.825 14.8078 21.1047C13.0949 19.3918 11.8029 17.4713 10.9464 15.526C10.7681 15.1241 10.8719 14.652 11.1832 14.3407L12.3904 13.1335C13.3711 12.1528 13.3711 10.7658 12.5146 9.90935L10.8002 8.19496C9.65878 7.0535 7.80847 7.0535 6.66701 8.19496L5.71409 9.14642C4.63109 10.2294 4.17947 11.7918 4.47178 13.341C5.19378 17.16 7.4124 21.3415 10.9917 24.9208C14.571 28.5001 18.7525 30.7187 22.5715 31.4407C24.1207 31.733 25.6831 31.2814 26.7661 30.1984L27.7175 29.247C28.859 28.1055 28.859 26.2552 27.7175 25.1123V25.1123Z" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19 11.0533C20.5068 11.0328 22.021 11.5911 23.1712 12.7414" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M27.3045 8.60843C25.0113 6.31528 22.0049 5.16797 19 5.16797" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24.858 16.9124C24.8785 15.4056 24.3202 13.8914 23.1699 12.7412" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M27.3047 8.6084C29.5978 10.9016 30.7451 13.9079 30.7451 16.9129" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+  
+            <p>Telefone: 41 3524-2273</p>
+          </div>
+          <div class="flex items-center font-light text-lg gap-3">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6068 9.10386C24.2011 6.6967 21.0018 5.36963 17.5935 5.36816C10.5679 5.36816 4.8518 11.0813 4.85034 18.104C4.84742 20.3387 5.4335 22.5354 6.55011 24.4719L4.74219 31.0722L11.4974 29.3009C13.3667 30.3181 15.4596 30.8515 17.5876 30.8515H17.5935C24.6162 30.8515 30.3323 25.1369 30.3352 18.1142C30.3366 14.7118 29.0125 11.5125 26.6068 9.10386Z" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.1367 20.5008L19.7301 19.9118C20.2753 19.371 21.1376 19.3023 21.766 19.7437C22.374 20.1705 22.9236 20.5534 23.4351 20.91C24.2477 21.4742 24.3456 22.6317 23.6456 23.3303L23.1209 23.855" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.9043 12.6361L12.429 12.1114C13.1276 11.4127 14.2851 11.5107 14.8493 12.3218C15.2045 12.8334 15.5874 13.3829 16.0156 13.9909C16.457 14.6194 16.3898 15.4817 15.8475 16.0268L15.2585 16.6202" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23.1215 23.8546C20.957 26.0089 17.3192 24.179 14.4473 21.3057" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.4512 21.31C11.5793 18.4366 9.74942 14.8003 11.9037 12.6357" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.2578 16.6201C15.724 17.3553 16.3218 18.0831 16.997 18.7583L17 18.7613C17.6752 19.4365 18.403 20.0343 19.1382 20.5005" stroke="#FF6A39" stroke-width="2.19231" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+  
+            <p>WhatsApp: 41 99167-2798</p>
+          </div>
+          <div class="flex items-center font-light text-lg gap-3">
+            <svg class="shrink-0" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.4016 14.8024C16.6179 15.0192 16.6176 15.3703 16.401 15.5868C16.1843 15.8033 15.8332 15.8033 15.6165 15.5868C15.3999 15.3703 15.3996 15.0192 15.6159 14.8024C15.72 14.698 15.8613 14.6394 16.0087 14.6394C16.1561 14.6394 16.2975 14.698 16.4016 14.8024" stroke="#FF6A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.2258 15.0623V15.0623C21.2262 16.482 20.5957 17.8284 19.5051 18.7372L17.7924 20.1645C17.1096 20.7338 16.5987 21.4821 16.3171 22.3254L15.9996 23.2751L15.6835 22.3254C15.4017 21.4822 14.8909 20.734 14.2082 20.1645L12.4942 18.7399C11.4033 17.8318 10.7728 16.4857 10.7735 15.0663V15.0663V15.093C10.7701 13.7122 11.3219 12.388 12.3047 11.4182C13.2876 10.4484 14.619 9.91435 15.9996 9.93619C17.3796 9.91436 18.7104 10.4479 19.6931 11.4168C20.6759 12.3858 21.2281 13.7089 21.2258 15.089" stroke="#FF6A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6705 28.6106H9.33165C6.3849 28.6106 3.99609 26.2218 3.99609 23.275V9.93614C3.99609 6.9894 6.3849 4.60059 9.33165 4.60059H22.6705C25.6173 4.60059 28.0061 6.9894 28.0061 9.93614V23.275C28.0061 26.2218 25.6173 28.6106 22.6705 28.6106Z" stroke="#FF6A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+  
+            <p class="max-w-xs">R. Izabel A Redentora, 2356 Centro, São José dos Pinhais - PR, 83.005-010</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" 
+    class="z-10 absolute min-w-[260px] translate-y-1/2 bottom-1/2
+          left-1/2 -translate-x-1/2 md:translate-y-0 md:bottom-5 text-white
+         bg-purple-main hover:bg-purple-main/90 focus:ring-4
+           focus:outline-none focus:ring-purple-main/50 font-medium
+           text-lg px-5 py-2.5 text-center inline-flex items-center gap-1">
+    
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.9293 11.7989C13.0998 11.9698 13.0996 12.2466 12.9288 12.4173C12.758 12.588 12.4812 12.588 12.3103 12.4173C12.1395 12.2466 12.1393 11.9698 12.3099 11.7989C12.3919 11.7166 12.5034 11.6704 12.6196 11.6704C12.7358 11.6704 12.8472 11.7166 12.9293 11.7989"
+          stroke="white" stroke-width="1.57679" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M16.7328 12.0038V12.0038C16.7331 13.1231 16.236 14.1846 15.3762 14.9011L14.0259 16.0263C13.4876 16.4752 13.0848 17.0651 12.8628 17.73L12.6125 18.4787L12.3633 17.73C12.1411 17.0652 11.7384 16.4754 11.2002 16.0263L9.84882 14.9032C8.98878 14.1873 8.49167 13.126 8.4922 12.007V12.007V12.028C8.48954 10.9394 8.92455 9.89544 9.69944 9.13084C10.4743 8.36623 11.524 7.9452 12.6125 7.96242C13.7004 7.94521 14.7497 8.36581 15.5244 9.12973C16.2992 9.89365 16.7346 10.9368 16.7328 12.0249"
+          stroke="white" stroke-width="1.57679" stroke-linecap="round" stroke-linejoin="round" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M17.8713 22.6852H7.35497C5.03177 22.6852 3.14844 20.8019 3.14844 18.4787V7.96239C3.14844 5.63919 5.03177 3.75586 7.35497 3.75586H17.8713C20.1945 3.75586 22.0778 5.63919 22.0778 7.96239V18.4787C22.0778 20.8019 20.1945 22.6852 17.8713 22.6852Z"
+          stroke="white" stroke-width="1.57679" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Clique aqui para Google Maps
+    </a>
+    <div class="w-full bg-cover bg-no-repeat h-full min-h-[40vh] bg-center"
+      style="background-image: url(https://placehold.co/900x500);">
+    </div>
+  </section>
+
+  <section class="w-full flex justify-center items-center py-8 px-4 gap-4 flex-col md:flex-row">
+    <h1 class="font-bold text-white text-2xl text-center md:text-3xl">
+      ASSINE A NOSSA NEWSLETTER
+    </h1>
+    <form class="flex items-center gap-4 flex-col md:flex-row">
+      <input class="w-72 border-2 border-white bg-transparent rounded-lg h-fit px-4 py-2 text-white"
+        placeholder="Digite o seu melhor e-mail" />
+      <button type="submit" class="flex w-fit text-white bg-orange-main hover:bg-orange-main/90
+            focus:outline-none focus:ring-4 focus:bg-orange-main/90
+            font-medium rounded-lg text-lg px-5 py-2.5
+            text-center">
+        Enviar
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.6011 14.1055L21.6011 3.10547M10.6011 14.1055L14.1011 21.1055C14.145 21.2012 14.2155 21.2823 14.3041 21.3392C14.3927 21.3961 14.4958 21.4263 14.6011 21.4263C14.7065 21.4263 14.8096 21.3961 14.8982 21.3392C14.9868 21.2823 15.0573 21.2012 15.1011 21.1055L21.6011 3.10547M10.6011 14.1055L3.60114 10.6055C3.5054 10.5616 3.42427 10.4912 3.36739 10.4025C3.31051 10.3139 3.28027 10.2108 3.28027 10.1055C3.28027 10.0002 3.31051 9.89705 3.36739 9.80842C3.42427 9.71978 3.5054 9.64934 3.60114 9.60547L21.6011 3.10547"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </form>
+  </section>
 
   <footer class="bg-orange-main">
     <div class="flex flex-col mx-auto md:w-2/3 md:min-w-3xl md:max-w-7xl px-2 py-16 md:px-4">
@@ -146,15 +246,15 @@
         <div class="text-white flex flex-col items-center md:items-start">
           <h2 class="text-2xl font-bold">Páginas</h2>
           <a href="./index.html">Início</a>
-          <a href="./capacitacao.html">Capacitação</a>
-          <a href="./eventos.html" class="font-bold">Eventos</a>
+          <a href="">Capacitação</a>
+          <a href="./eventos.html">Eventos</a>
           <a href="./contato.html">Contato</a>
         </div>
 
         <div class="text-white flex flex-col items-center md:items-start">
           <h2 class="text-2xl font-bold">Termos</h2>
-          <a href="./privacidade.html">Privacidade</a>
-          <a href="./termos-e-condicoes.html">Termos e condições</a>
+          <a href="">Privacidade</a>
+          <a href="">Termos e condições</a>
         </div>
         <div class="text-white flex flex-col items-center md:items-start">
           <h2 class="text-2xl font-bold">Nossas redes</h2>
